@@ -1,5 +1,74 @@
 * {
 	margin: 0;
 	padding: 0;
+	border: 0;
 	box-sizing: border-box;
+}
+
+input {
+	background: transparent;
+	outline: none;
+	border: none;
+}
+
+.button {
+	background: transparent;
+	padding: 10px;
+	border: 1px solid rgb(146, 146, 132);
+}
+
+.app {
+	margin: 0 auto;
+	margin-top: 50px;
+	padding: 50px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.app > {
+	flex-grow: 1;
+}
+
+.table-container {
+	padding: 10px;
+}
+
+.table-container__title {
+	text-align: center;
+}
+
+.table-container__buttons {
+	margin-top: 15px;
+}
+
+.table-container__button {
+	padding: 10px;
+	cursor: pointer;
+	background-color: beige;
+}
+
+.table-container__button:not(:last-child) {
+	margin-right: 5px;
+}
+
+.table__head {
+	font-weight: bold;
+}
+
+.table-container__scroll-area {
+	max-height: 300px;
+	overflow-y: auto;
+}
+
+.table__row {
+	background-color: beige;
+}
+
+.table__row.selected {
+	background-color: aquamarine;
+}
+.table__cell {
+	padding: 10px;
+	text-align: left;
 }
