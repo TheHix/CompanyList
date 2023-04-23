@@ -103,6 +103,7 @@ export const EmployeeTable = () => {
 			onClickRemove={onClickRemove}
 			onToggleAll={onToggleAll}
 			checked={isSelectedAll}
+			getTableItems={async () => {}}
 		>
 			<TableHeader columnNames={columnNames} />
 

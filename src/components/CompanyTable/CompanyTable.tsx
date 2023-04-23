@@ -89,6 +89,13 @@ export const CompanyTable = () => {
 		setIsSelectedAll(false);
 	}, [dispatch, selectedCompanyIds]);
 
+	// !!! Только для примера
+	const getTableItems = () => {
+		return new Promise((res) => {
+			setTimeout(() => res(onClickAdd()), 300);
+		});
+	};
+
 	return (
 		<TableContainer
 			title="Компании"
@@ -96,6 +103,7 @@ export const CompanyTable = () => {
 			onClickRemove={onClickRemove}
 			onToggleAll={onToggleAll}
 			checked={isSelectedAll}
+			getTableItems={getTableItems}
 		>
 			<TableHeader columnNames={columnNames} />
 

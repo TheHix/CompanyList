@@ -6,6 +6,7 @@ interface TableContainerProps {
 	onToggleAll: () => void;
 	onClickAdd: () => void;
 	onClickRemove: () => void;
+	getTableItems: () => Promise<any>;
 	checked: boolean;
 	children: ReactNode;
 }
@@ -21,10 +22,11 @@ const TableContainer: FC<TableContainerProps> = ({
 	onToggleAll,
 	onClickRemove,
 	onClickAdd,
+	getTableItems,
 	children,
 	checked,
 }) => {
-	const { containerRef, isLoading } = useInfiniteScroll(getData);
+	const { containerRef, isLoading } = useInfiniteScroll(getTableItems);
 
 	return (
 		<div className="table-container">

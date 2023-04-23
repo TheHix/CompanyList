@@ -11,7 +11,7 @@ export const companyAdapter = createEntityAdapter<Company>({
 export interface CompaniesState extends EntityState<Company> {}
 
 const companiesInitialState = companyAdapter.getInitialState<CompaniesState>({
-	ids: ["1", "2", "3"],
+	ids: ["1", "2", "3", "4", "5", "6", "7", "8"],
 	entities: {
 		1: {
 			id: "1",
@@ -32,6 +32,41 @@ const companiesInitialState = companyAdapter.getInitialState<CompaniesState>({
 			employees: ["106"],
 			name: "Company 2",
 			address: "some address 3",
+			isSelected: false,
+		},
+		4: {
+			id: "4",
+			employees: [],
+			name: "Company 4",
+			address: "some address 4",
+			isSelected: false,
+		},
+		5: {
+			id: "5",
+			employees: [],
+			name: "Company 5",
+			address: "some address 5",
+			isSelected: false,
+		},
+		6: {
+			id: "6",
+			employees: [],
+			name: "Company 6",
+			address: "some address 6",
+			isSelected: false,
+		},
+		7: {
+			id: "7",
+			employees: [],
+			name: "Company 7",
+			address: "some address 7",
+			isSelected: false,
+		},
+		8: {
+			id: "8",
+			employees: [],
+			name: "Company 8",
+			address: "some address 8",
 			isSelected: false,
 		},
 	},
