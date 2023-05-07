@@ -11,12 +11,6 @@ interface TableContainerProps {
 	children: ReactNode;
 }
 
-const getData = async () => {
-	console.log(1);
-
-	// подгружаем данные для таблицы
-};
-
 const TableContainer: FC<TableContainerProps> = ({
 	title,
 	onToggleAll,
